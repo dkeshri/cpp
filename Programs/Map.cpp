@@ -1,10 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
-void display(list<int> &items)
+void display(map<int,string> &items)
 {
     for (auto item : items)
     {
-        cout << item << " ";
+        cout << item.first <<" "<<item.second;
     }
     cout<<"\n";
 }
@@ -33,20 +33,16 @@ void insertAtPos(vector<pair<int,string>> &v,int pos,pair<int,string> data){
 int main()
 {
     int n;
-    list<int> l;
-    l.push_back(1);
-    l.push_back(6);
-    l.push_back(4);
-    l.push_back(9);
-    l.push_back(5);
-    display(l);
-    list<int> :: iterator itr;
-    itr = l.begin();
-    advance(itr,1);
+    map<int,string> l;
+    l[1] = "deepak";
+    l[9] = "shubham";
+    l[4] = "pradeep";
+    l[5] = "nikita";
+    l[10] = "nikita";
 
-    l.insert(itr,2);
-    
-    display(l);
+    auto a = l.end();
+    cout<<(*a).first <<(*a).second;
+    //display(l);
 
     return 0;
 }
