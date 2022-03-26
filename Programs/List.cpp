@@ -1,10 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
-void display(vector<pair<int,string>> &v)
+void display(list<int> &items)
 {
-    for (auto data : v)
+    for (auto item : items)
     {
-        cout << data.first<<" " << data.second << " ";
+        cout << item << " ";
     }
     cout<<"\n";
 }
@@ -34,7 +34,16 @@ int main()
 {
     int n;
     list<int> l;
+    l.push_back(1);
+    l.push_back(6);
+    l.push_back(4);
+    l.push_back(9);
+    l.push_back(5);
+    display(l);
+    l.sort();
     
+    
+    display(l);
 
     return 0;
 }
