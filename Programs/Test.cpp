@@ -13,11 +13,16 @@ int secondLargestNum(int arr[],int size){
     return secondLargestNum;
 }
 int main(){
-    int n;
-    cin>>n;
-    int arr[n];
-    for(int i=0;i<n;++i)
+    int arr[6];
+
+    int size =  sizeof(arr)/sizeof(arr[0]);
+    cout<<size;
+    for(int i=0;i<6;++i){
         cin>>arr[i];
-    cout<<secondLargestNum(arr,n);
+    }
+    for(int data : arr){
+        cout<< data <<" ";
+    }
+
     return 0;
 }
