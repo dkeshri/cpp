@@ -1,7 +1,0 @@
-<Solution>
-  <Configurations>
-    <Platform Name="x64" />
-    <Platform Name="x86" />
-  </Configurations>
-  <Project Path="CompetitiveProgramming/CompetitiveProgramming.vcxproj" Id="0fa5a733-589a-430b-8cc3-a0435404a284" />
-</Solution>
