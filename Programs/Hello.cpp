@@ -1,10 +1,9 @@
 #include <iostream>
 using namespace std;
 int main() {
-    int a;
-    cout << "Enter a number: "; 
-    cin>>a;
-    cout << "You entered: " << a << endl;
-    cout << "Hello, World!" << endl;
-    return 0;
+    int n;
+    cout << "Enter numbers (Ctrl+D to end):" << endl;
+    while(cin >> n) {
+        cout << n << endl;
+    }
 }
