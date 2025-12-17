@@ -1,4 +1,3 @@
-Enter numbers (Ctrl+D to end):
 1
 2
 3
