@@ -1,42 +1,49 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <string>
 using namespace std;
-struct Node{
-    int num;
-    Node *ptr;
+struct Node {
+    int data;
+    string info;
+};
+class MyClass {
+    public:
+    int value;
+    string name;
+};
+
+class Test{
+    public:
+    void displayList(Node &data) {
+        data.data = 5;
+        data.info = "Hello";
+        cout << "Node Data: " << data.data << ", Info: " << data.info<< endl;
+    }
+
+    void showClass(MyClass &obj) {
+        obj.value = 20;
+        obj.name = "TestName";
+        cout << "MyClass Value: " << obj.value << ", Name: " << obj.name<< endl;
+    }
 };
 
 
+
+
 int main (){
-    Node *head = NULL;
-    Node *last = NULL;
-    for(int i = 0;i<5;i++){
-        Node *temp = new Node();
-        temp->num = i;
-        temp->ptr = NULL;
-        
-        if(head==NULL){
-            head = temp;
-            last = temp;
-        }else{
-            last->ptr = temp;
-            last = temp;
-        }
-            
-    }
+    Test test;
+    Node data;
+    MyClass myObj;
 
-    Node *temp = head;
-    cout<<head->num;
+    myObj.value = 10;
+    myObj.name = "Sample";
 
-    while (temp->ptr!=NULL)
-    {
-        cout<<temp->num <<" ";
-        temp= temp->ptr;
-    }
-    temp = head;
-    while (temp->ptr!=NULL)
-    {
-        cout<<temp->num <<" ";
-        temp= temp->ptr;
-    }
+    data.data = 4;
+    data.info = "World";
+    test.displayList(data);
+
+    test.showClass(myObj);
+
+    cout << "Node Data: " << data.data << ", Info: " << data.info<< endl;
+    cout << "MyClass Value: " << myObj.value << ", Name: " << myObj.name<< endl;
     return 0;
 }
