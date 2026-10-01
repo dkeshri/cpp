@@ -9,8 +9,7 @@
         "C:/msys64/ucrt64/include"
       ],
       "intelliSenseMode": "windows-gcc-x64",
-      "cppStandard": "c++17",
-      "check":"dummy"
+      "cppStandard": "c++17"
     }
   ],
   "version": 4
