@@ -47,7 +47,6 @@ packages/
 .nuget/
 
 # Visual Studio Code or other editors
-.vscode/
 .idea/
 
 # Logs, coverage, and temporary files
