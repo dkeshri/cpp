@@ -1,8 +1,1 @@
-Node Data: 5, Info: Hello
-Node Data: 4, Info: World
-Node Data: 5, Info: Hello
-Node Data: 5, Info: Hello
-MyClass Value: 20, Name: TestName
-MyClass Value: 10, Name: Sample
-MyClass Value: 20, Name: TestName
-MyClass Value: 20, Name: TestName
+10 20 
